@@ -32,6 +32,20 @@ function calculateFoodOrder(numAnimals, avgFood) {
  */
 function mostPopularDays(week) {
     // IMPLEMENT THIS FUNCTION!
+    // var mostPopularDay = [];
+    // if (week == null || week.length == 0) {
+    //     mostPopularDay = null;
+    // }
+    // else {
+    //     var highest = 0;
+    //     week.forEach(function(dayObj) {
+    //         if (dayObj.traffic >= highest) {
+
+    //         }
+    //     });
+    // }
+    // return mostPopularDay;
+
 }
 
 
@@ -48,6 +62,21 @@ function mostPopularDays(week) {
  */
 function createAnimalObjects(names, types, breeds) {
     // IMPLEMENT THIS FUNCTION!
+    var animals = [];
+    if ((names.length == 0 || names == null) || (types.length == 0 || types == null) || (breeds.length == 0 || breeds == null)) {
+        return animals;
+    }
+    else if (names.length !== types.length || names.length !== breeds.length) {
+        return animals;
+    }
+    else {
+        for (var i = 0; i < names.length; i++) {
+            animals[i] = new Animal(names[i], types[i], breeds[i]);
+        }
+        return animals;
+    }
+        
+
 }
 
 /////////////////////////////////////////////////////////////////
