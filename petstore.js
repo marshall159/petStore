@@ -10,6 +10,15 @@
  */
 function calculateFoodOrder(numAnimals, avgFood) {
     // IMPLEMENT THIS FUNCTION!
+    var total;
+    if (numAnimals < 0 || isNaN(numAnimals) || avgFood < 0 || isNaN(avgFood)) {
+        total = -1;
+    }
+    else {
+        total = numAnimals * avgFood;
+    }
+    return total;
+
 }
 
 /**
