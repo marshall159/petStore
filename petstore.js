@@ -38,20 +38,20 @@ function mostPopularDays(week) {
     }
     else {
         var highest = [week[0].traffic];
-        for (let i = 1; i < week.length; i++) {
+        for (var i = 1; i < week.length; i++) {
             if (week[i].traffic > highest) {
                 highest = week[i].traffic;
             }
         }
 
-        for (let i = 0; i < week.length; i++) {
+        for (var i = 0; i < week.length; i++) {
             if (week[i].traffic == highest) {
                 mostPopularDay.push(week[i].name);
             }
         }
        
     }
-    if (mostPopularDay.length == 1) {
+    if (mostPopularDay != null && mostPopularDay.length == 1) {
         mostPopularDay = String(mostPopularDay);
     }
     return mostPopularDay;
