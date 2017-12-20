@@ -58,6 +58,15 @@ function mostPopularDays(week) {
 
 }
 
+// var monday = new Weekday('Monday', 10);
+// var tuesday = new Weekday('Tuesday', 20);
+// var wednesday = new Weekday('Wednesday', 20);
+// var thursday = new Weekday('Thursday', 30);
+// var friday = new Weekday('Friday', 14);
+
+// var week = [monday, tuesday, wednesday, thursday, friday];
+
+
 
 /**
  * Given three arrays of equal length containing information about a list of
